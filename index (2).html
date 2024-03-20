@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('loginbg.jpeg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container h2 {
+            font-size: 30px;
+            color: black;
+        }
+
+        .form {
+            color: black;
+        }
+
+        .form label {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form input[type="text"],
+        .form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        .login-button {
+            background-color: #0056b3;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>LOGIN</h2>
+            <form class="form" action="product.html" id="validate">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                    <a href="webpage1.html" class="btn btn-primary" type="submit" onclick="store(event)">Login</a>
+                    <a href="registerform.html" class="btn btn-primary" type="submit">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    
+    function store(e){
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+
+        username = usernmae.value;
+        password;
+        if(username = 'admin && password = 'password'){
+            localStorage.setItems('username',username);
+            alert("login success");
+        }
+        else{
+            
+            alert("login failed")  
+        }
+    }
+</script>
+
+</html>
